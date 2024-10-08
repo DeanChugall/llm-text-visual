@@ -10,7 +10,7 @@
 
 <!-- [![DOI:10.1145/3491101.3519653](https://img.shields.io/badge/DOI-10.1145/3491101.3519653-blue)](https://doi.org/10.1145/3491101.3519653) -->
 
-Exploring and interpreting large embeddings in your browser!
+Exploring and interpreting large embeddings in your browser! 
 
 <table>
   <tr>
