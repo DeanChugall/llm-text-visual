@@ -80,15 +80,7 @@
     <div class="row-block">
       <div class="dataset-list">
         <ul>
-          <li>
-            <a href="./?dataset=diffusiondb"
-              >DiffusionDB (1.8M text + 1.8M images)</a
-            >
-          </li>
-          <li>
-            <a href="./?dataset=acl-abstracts"> ACL Abstracts (63k text) </a>
-          </li>
-          <li>
+         <li>
             <a href="./?dataset=imdb"> IMDB Reviews (25k text) </a>
           </li>
         </ul>
