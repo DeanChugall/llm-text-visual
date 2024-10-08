@@ -58,7 +58,7 @@ export default defineConfig(({ command, mode }) => {
         return {
           base: '/llm-text-visual/',
           build: {
-            outDir: 'gh-page'
+            outDir: 'docs'
           },
           plugins: [svelte(), removeDataDir()]
         };
