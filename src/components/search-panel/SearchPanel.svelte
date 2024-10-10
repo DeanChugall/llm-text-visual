@@ -139,7 +139,7 @@
       id="search-bar-input"
       name="search-query"
       bind:value="{searchInputValue}"
-      placeholder="Search WizMap Embeddings"
+      placeholder="Search Embeddings"
       spellcheck="false"
       on:focus="{() => {
         inputFocused = true;

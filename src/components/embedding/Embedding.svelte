@@ -39,12 +39,13 @@
   export let notebookMode: boolean;
 
   // Resolve the embedding data files based on the embedding
-  let DATA_BASE = `${import.meta.env.BASE_URL}data`;
+  let DATA_BASE = 'https://huggingface.co/datasets/datatab/serbian-embeddings-visualization/resolve/main';
   if (import.meta.env.MODE === 'vercel' || import.meta.env.MODE === 'github') {
-    DATA_BASE = 'https://pub-596951ee767949aba9096a18685c74bd.r2.dev';
+    DATA_BASE = 'https://huggingface.co/datasets/datatab/serbian-embeddings-visualization/resolve/main';
   }
   const HF_BASE =
-    'https://huggingface.co/datasets/xiaohk/embeddings/resolve/main';
+    'https://huggingface.co/datasets/datatab/serbian-embeddings-visualization/resolve/main';
+
 
   const dataURLs: DataURLs = {
     point: '',
@@ -52,30 +53,30 @@
   };
 
   switch (datasetName) {
-    case 'diffusiondb': {
+    case 'alpaca_serbian': {
       // dataURLs.point = DATA_BASE + '/diffusiondb/umap-mini.ndjson';
-      dataURLs.point = DATA_BASE + '/diffusiondb/umap.ndjson';
-      dataURLs.grid = DATA_BASE + '/diffusiondb/grid.json';
+      dataURLs.point = DATA_BASE + '/alpaca_serbian/data.ndjson';
+      dataURLs.grid = DATA_BASE + '/alpaca_serbian/grid.json';
       break;
     }
 
-    case 'acl-abstracts': {
-      dataURLs.point = DATA_BASE + '/acl-abstracts/umap.ndjson';
-      dataURLs.grid = DATA_BASE + '/acl-abstracts/grid.json';
+    case 'alpaca_sr_embedic': {
+      dataURLs.point = DATA_BASE + '/alpaca_serbian/umap-alpaca-embedic.ndjson';
+      dataURLs.grid = DATA_BASE + '/alpaca_serbian/grid-alpaca-embedic.json';
       break;
     }
-
-    case 'imdb': {
-      dataURLs.point = HF_BASE + '/imdb/data.ndjson';
-      dataURLs.grid = HF_BASE + '/imdb/grid.json';
+// 
+    case 'oz_eval': {
+      dataURLs.point = HF_BASE + '/oz_eval/data.ndjson';
+      dataURLs.grid = HF_BASE + '/oz_eval/grid.json';
       break;
     }
-
-    case 'temp': {
-      dataURLs.point = DATA_BASE + '/temp/data.ndjson';
-      dataURLs.grid = DATA_BASE + '/temp/grid.json';
-      break;
-    }
+// 
+//     case 'temp': {
+//       dataURLs.point = DATA_BASE + '/temp/data.ndjson';
+//       dataURLs.grid = DATA_BASE + '/temp/grid.json';
+//       break;
+//     }
 
     default: {
       console.error(`Unknown dataset name: ${datasetName}`);

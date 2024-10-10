@@ -5,7 +5,7 @@
   import { getFooterStore, getSearchBarStore } from '../../stores';
 
   let component: HTMLElement | null = null;
-  let datasetName = 'acl-abstracts';
+  let datasetName = 'oz_eval';
   let dataURL: string | null = null;
   let gridURL: string | null = null;
   let notebookMode = false;

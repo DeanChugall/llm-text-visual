@@ -81,12 +81,15 @@
       <div class="dataset-list">
         <ul>
           <li>
-            <a href="./?dataset=diffusiondb"
-              >DiffusionDB (1.8M text + 1.8M images)</a
+            <a href="./?dataset=alpaca_serbian"
+              >Serbian Alpaca</a
             >
           </li>
           <li>
-            <a href="./?dataset=acl-abstracts"> ACL Abstracts (63k text) </a>
+            <a href="./?dataset=alpaca_sr_embedic"> Serbian Alpaca Embedic</a>
+          </li>
+          <li>
+            <a href="./?dataset=oz_eval"> Oz Eval</a>
           </li>
         </ul>
       </div>
@@ -171,29 +174,29 @@
     </span>
     <div class="splitter"></div>
 
-    <a href="https://arxiv.org/abs/2306.09328"
+    <!-- <a href="https://arxiv.org/abs/2306.09328"
       ><span class="item">
         <span class="svg-icon">{@html iconFile}</span>
         Paper
       </span></a
     >
-    <div class="splitter"></div>
+    <div class="splitter"></div> -->
 
-    <a href="https://github.com/poloclub/wizmap"
+    <!-- <a href="https://github.com/poloclub/wizmap"
       ><span class="item">
         <span class="svg-icon">{@html iconGithub}</span>
         Code
       </span></a
     >
-    <div class="splitter"></div>
+    <div class="splitter"></div> -->
 
-    <a href="https://youtu.be/8fJG87QVceQ"
+    <!-- <a href="https://youtu.be/8fJG87QVceQ"
       ><span class="item">
         <span class="svg-icon">{@html iconPlay}</span>
         Video
       </span></a
     >
-    <div class="splitter"></div>
+    <div class="splitter"></div> -->
 
     <button
       on:click="{() => {
